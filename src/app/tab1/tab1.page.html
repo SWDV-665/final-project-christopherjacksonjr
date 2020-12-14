@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Calendar</h3>
+  <ion-list>
+    <ion-item ngFor="let cal of calendars" tappable>
+      <!-- (click)="addEvent(cal)" -->
+      <button ion-button icon-only item-start clear>
+        <ion-icon name="add"></ion-icon>
+      </button>
+      <!-- {{ cal.name }}
+      <p>{{ cal.type }}</p> -->
+      <!-- (click)="openCal(cal)" -->
+      <button ion-button icon-only item-end clean>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

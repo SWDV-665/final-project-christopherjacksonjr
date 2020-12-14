@@ -1,0 +1,7 @@
+{
+  "name": "money-management",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
